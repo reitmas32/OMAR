@@ -7,14 +7,14 @@ class Book {
   String year;
   String edition;
   String library;
-  String themes;
+  List<String> themes;
   String key;
   String availability;
   String location;
   String image;
   String review;
   String stars;
-  String format;
+  bool format;
   String apa;
   Color colorTop;
   Color colorEnd;

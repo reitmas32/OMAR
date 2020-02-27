@@ -1,3 +1,4 @@
+import 'package:OMAR/Class/Books.dart';
 import 'package:OMAR/Screens/SplashScreen/BackGround.dart';
 import 'package:animate_do/animate_do.dart' as animate;
 import 'package:OMAR/Screens/SplashScreen/ImageIcon.dart' as icon;
@@ -19,8 +20,9 @@ class _SplashScreenState extends State<SplashScreen> {
         seconds: 3,
       ),
       () {
-        Navigator.of(context)
-            .pushNamedAndRemoveUntil('/ListViewBook', (route) => false);
+        Navigator.of(context).pushNamedAndRemoveUntil(
+            '/ListViewBook', (route) => false,
+            arguments: getBooks());
       },
     );
   }
@@ -28,12 +30,8 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     Future _speak() async {
-      await flutterTts.setVoice('es-MX-sfb-network');
-      await flutterTts.setLanguage('es-ES');
-      await flutterTts.speak("Hola yo soy OMAR");
-
-      dynamic n = await flutterTts.getVoices;
-      print(n);
+      // await flutterTts.setLanguage('es-ES');
+      // await flutterTts.speak("Hola yo soy OMAR");
     }
 
     final double height_box = MediaQuery.of(context).size.height / 6;
