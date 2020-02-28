@@ -109,7 +109,7 @@ class _ListViewBookState extends State<ListViewBook> {
                       ),
                     ],
                   ),
-                  Text('Consilta nuestro PDF'),
+                  Text('Consulta nuestro PDF'),
                   SizedBox(
                     height: 15.0,
                   ),
