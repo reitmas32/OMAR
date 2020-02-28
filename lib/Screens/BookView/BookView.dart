@@ -10,6 +10,9 @@ class BookView extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
+          iconTheme: IconThemeData(
+            color: Color.fromRGBO(211, 0, 0, 1.0),
+          ),
           title: Text(
             book.title,
             overflow: TextOverflow.ellipsis,
