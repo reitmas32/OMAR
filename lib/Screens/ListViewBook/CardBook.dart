@@ -24,7 +24,7 @@ class _CardBookState extends State<CardBook> {
           child: Container(
             height: MediaQuery.of(context).size.height / 5,
             decoration: BoxDecoration(
-              color: Color.fromRGBO(234, 255, 182, 1.0),
+              color: Color.fromRGBO(206, 220, 158, 1.0),
               borderRadius: BorderRadius.all(
                 Radius.circular(10.0),
               ),
