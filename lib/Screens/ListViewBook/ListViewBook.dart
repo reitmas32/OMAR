@@ -1,7 +1,6 @@
 import 'package:OMAR/Class/Book.dart';
 import 'package:OMAR/Class/Books.dart';
 import 'package:OMAR/Screens/ListViewBook/CardBook.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class ListViewBook extends StatefulWidget {
@@ -111,6 +110,10 @@ class _ListViewBookState extends State<ListViewBook> {
                     ],
                   ),
                   Text('Consilta nuestro PDF'),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  Text('A qui va el link del PDF xd'),
                 ],
               ),
             ),
